@@ -1,7 +1,7 @@
 [package]
 name = "anchor-community"
 version = "0.0.0"
-authors = ["Terraform Labs, PTE."]
+authors = ["Daodiseoform Labs, PTE."]
 edition = "2018"
 description = "A Community contract for Anchor Protocol - Keeps premined ANC token which can be used through Gov proposal"
 license = "Apache-2.0"

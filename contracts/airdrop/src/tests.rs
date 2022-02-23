@@ -156,14 +156,14 @@ fn claim() {
         ],
     };
 
-    let info = mock_info("terra1qfqa2eu9wp272ha93lj4yhcenrc6ymng079nu8", &[]);
+    let info = mock_info("daodiseo1qfqa2eu9wp272ha93lj4yhcenrc6ymng079nu8", &[]);
     let res = execute(deps.as_mut(), mock_env(), info.clone(), msg.clone()).unwrap();
     assert_eq!(
         res.messages,
         vec![SubMsg::new(CosmosMsg::Wasm(WasmMsg::Execute {
             contract_addr: "anchor0000".to_string(),
             msg: to_binary(&Cw20ExecuteMsg::Transfer {
-                recipient: "terra1qfqa2eu9wp272ha93lj4yhcenrc6ymng079nu8".to_string(),
+                recipient: "daodiseo1qfqa2eu9wp272ha93lj4yhcenrc6ymng079nu8".to_string(),
                 amount: Uint128::new(1000001u128),
             })
             .unwrap(),
@@ -176,7 +176,7 @@ fn claim() {
         vec![
             attr("action", "claim"),
             attr("stage", "1"),
-            attr("address", "terra1qfqa2eu9wp272ha93lj4yhcenrc6ymng079nu8"),
+            attr("address", "daodiseo1qfqa2eu9wp272ha93lj4yhcenrc6ymng079nu8"),
             attr("amount", "1000001")
         ]
     );
@@ -188,7 +188,7 @@ fn claim() {
                 mock_env(),
                 QueryMsg::IsClaimed {
                     stage: 1,
-                    address: "terra1qfqa2eu9wp272ha93lj4yhcenrc6ymng079nu8".to_string(),
+                    address: "daodiseo1qfqa2eu9wp272ha93lj4yhcenrc6ymng079nu8".to_string(),
                 }
             )
             .unwrap()
@@ -215,7 +215,7 @@ fn claim() {
         ],
     };
 
-    let info = mock_info("terra1qfqa2eu9wp272ha93lj4yhcenrc6ymng079nu8", &[]);
+    let info = mock_info("daodiseo1qfqa2eu9wp272ha93lj4yhcenrc6ymng079nu8", &[]);
     let res = execute(deps.as_mut(), mock_env(), info, msg).unwrap();
 
     assert_eq!(
@@ -223,7 +223,7 @@ fn claim() {
         vec![SubMsg::new(CosmosMsg::Wasm(WasmMsg::Execute {
             contract_addr: "anchor0000".to_string(),
             msg: to_binary(&Cw20ExecuteMsg::Transfer {
-                recipient: "terra1qfqa2eu9wp272ha93lj4yhcenrc6ymng079nu8".to_string(),
+                recipient: "daodiseo1qfqa2eu9wp272ha93lj4yhcenrc6ymng079nu8".to_string(),
                 amount: Uint128::new(2000001u128),
             })
             .unwrap(),
@@ -236,7 +236,7 @@ fn claim() {
         vec![
             attr("action", "claim"),
             attr("stage", "2"),
-            attr("address", "terra1qfqa2eu9wp272ha93lj4yhcenrc6ymng079nu8"),
+            attr("address", "daodiseo1qfqa2eu9wp272ha93lj4yhcenrc6ymng079nu8"),
             attr("amount", "2000001")
         ]
     );

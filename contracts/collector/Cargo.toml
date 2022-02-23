@@ -1,7 +1,7 @@
 [package]
 name = "anchor-collector"
 version = "0.0.0"
-authors = ["Terraform Labs, PTE."]
+authors = ["Daodiseoform Labs, PTE."]
 edition = "2018"
 description = "A Collector contract for Anchor Protocol - collect all rewards and send it to staking contract"
 license = "Apache-2.0"

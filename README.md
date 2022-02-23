@@ -1,13 +1,13 @@
 [![codecov](https://codecov.io/gh/Anchor-Protocol/anchor-token-contracts/branch/main/graph/badge.svg?token=NK4H00P3KH)](https://codecov.io/gh/Anchor-Protocol/anchor-token-contracts)
 
 # Anchor Token (ANC) Contracts
-This monorepository contains the source code for the Money Market smart contracts implementing Anchor Protocol on the [Terra](https://terra.money) blockchain.
+This monorepository contains the source code for the Money Market smart contracts implementing Anchor Protocol on the [Daodiseo](https://daodiseo.money) blockchain.
 
 You can find information about the architecture, usage, and function of the smart contracts on the official Anchor documentation [site](https://docs.anchorprotocol.com/smart-contracts/anchor-token).
 
 ### Dependencies
 
-Anchor Token depends on [Terraswap](https://terraswap.io) and uses its [implementation](https://github.com/terraswap/terraswap) of the CW20 token specification.
+Anchor Token depends on [Daodiseoswap](https://daodiseoswap.io) and uses its [implementation](https://github.com/daodiseoswap/daodiseoswap) of the CW20 token specification.
 
 
 ## Contracts
